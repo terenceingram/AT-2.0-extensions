@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.archiviststoolkit.model">
+	<class name="org.archiviststoolkit.model.ArchDescComponentIdentifiers"
+		   table="ArchDescComponentIdentifiers">
+
+		<id name="archDescComponentId" column="archDescComponentId" type="java.lang.Long">
+			<generator class="native"></generator>
+		</id>
+
+		<version name="version" type="java.lang.Long" column="version"/>
+
+		<property name="auditInfo" type="org.archiviststoolkit.hibernate.AuditInfoType">
+			<column name="lastUpdated" not-null="true"/>
+			<column name="created" not-null="true"/>
+			<column name="lastUpdatedBy" not-null="true"/>
+			<column name="createdBy" not-null="true"/>
+		</property>
+
+		<!-- start fields -->
+		<property name="componentIdentifier"
+				  column="componentIdentifier"
+				  type="text"/>
+		
+		<property name="identifierType"
+				  column="identifierType"
+				  type="text"/>
+		
+		<property name="identifierLabel"
+				  column="identifierLabel"
+				  type="text"/>
+	
+	
+		<!--  relationships -->
+		<many-to-one name="resource"
+					 class="Resources"
+					 column="resourceId"/>
+		<!--access="field"-->
+		<!--outer-join="true"/>-->
+		
+		<many-to-one name="resourceComponent"
+					 class="ResourcesComponents"
+					 column="resourceComponentId"/>
+		<!--access="field"-->
+		<!--outer-join="true"/>-->
+
+	</class>
+
+</hibernate-mapping>
