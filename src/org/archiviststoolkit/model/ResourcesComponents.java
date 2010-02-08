@@ -16,6 +16,10 @@
 
 package org.archiviststoolkit.model;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.archiviststoolkit.structure.IncludeInApplicationConfiguration;
 import org.archiviststoolkit.structure.ExcludeFromDefaultValues;
 import org.archiviststoolkit.structure.StringLengthValidationRequried;
@@ -50,6 +54,8 @@ public class ResourcesComponents extends ResourcesCommon implements Comparable {
 	private Resources resource;
 	private boolean hasChild = false;
 	private Boolean hasNotes = false;
+	
+	private Set<ArchDescComponentIdentifiers> archDescComponentIdentifiers = new HashSet<ArchDescComponentIdentifiers>();
 
 	public ResourcesComponents() {
 	}
@@ -184,4 +190,14 @@ public class ResourcesComponents extends ResourcesCommon implements Comparable {
 	public void incrementSequenceNumber(int incrementAmount) {
 		setSequenceNumber(getSequenceNumber() + incrementAmount);
 	}
+
+	public Set<ArchDescComponentIdentifiers> getArchDescComponentIdentifiers() {
+		return archDescComponentIdentifiers;
+	}
+
+	public void setArchDescComponentIdentifiers(Set<ArchDescComponentIdentifiers> archDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers = archDescComponentIdentifiers;
+	}
+	
+	
 }

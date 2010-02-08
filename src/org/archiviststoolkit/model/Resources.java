@@ -195,6 +195,9 @@ public class Resources extends ResourcesCommon {
     private String userDefinedString2 ="";
 
     private ArrayList<ResourcesComponents> componentsToDelete = new ArrayList<ResourcesComponents>();
+    
+	@ExcludeFromDefaultValues
+    private Set<ArchDescComponentIdentifiers> archDescComponentIdentifiers = new HashSet<ArchDescComponentIdentifiers>();
 
     // Property accessors
 
@@ -1051,7 +1054,7 @@ public class Resources extends ResourcesCommon {
         componentsToDelete = new ArrayList<ResourcesComponents>();
     }
 
-    public JTree getPlainJTree() {
+	public JTree getPlainJTree() {
 		return plainJTree;
 	}
 
@@ -1111,4 +1114,22 @@ public class Resources extends ResourcesCommon {
     public void setUserDefinedString2(String userDefinedString2) {
         this.userDefinedString2 = userDefinedString2;
     }
+
+
+	public Set<ArchDescComponentIdentifiers> getArchDescComponentIdentifiers() {
+		return this.archDescComponentIdentifiers;
+	}
+
+
+	public void setArchDescComponentIdentifiers(Set<ArchDescComponentIdentifiers> archDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers = archDescComponentIdentifiers;
+	}
+    
+	public void addArchDescComponentIdentifier(ArchDescComponentIdentifiers newArchDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers.add(newArchDescComponentIdentifiers);
+	}
+	
+	public void removeArchDescComponentIdentifier(ArchDescComponentIdentifiers oldArchDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers.remove(oldArchDescComponentIdentifiers);
+	}
 }

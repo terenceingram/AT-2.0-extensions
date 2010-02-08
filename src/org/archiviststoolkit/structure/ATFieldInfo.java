@@ -399,6 +399,7 @@ public class ATFieldInfo implements Comparable {
         ATFieldInfo.addTableInfoIfNecessary(AssessmentsDigitalObjects.class);
         ATFieldInfo.addTableInfoIfNecessary(ArchDescriptionDates.class);
         ATFieldInfo.addTableInfoIfNecessary(ArchDescriptionPhysicalDescriptions.class);
+        ATFieldInfo.addTableInfoIfNecessary(ArchDescComponentIdentifiers.class);
 	}
 
 	public static void importFieldDefinitionsAndExamples(File file) {

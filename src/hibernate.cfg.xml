@@ -106,6 +106,9 @@
         <mapping resource="org/archiviststoolkit/model/AssessmentsResources.hbm.xml"/>
         <mapping resource="org/archiviststoolkit/model/AssessmentsAccessions.hbm.xml"/>
         <mapping resource="org/archiviststoolkit/model/AssessmentsDigitalObjects.hbm.xml"/>
+        
+        <mapping resource="org/archiviststoolkit/model/ArchDescComponentIdentifiers.hbm.xml"/>
+        
         <!--mapping for repeating dates-->
         <mapping resource="org/archiviststoolkit/model/ArchDescriptionDates.hbm.xml"/>
         <!--mapping for repeating physical descriptions-->

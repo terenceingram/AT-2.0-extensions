@@ -192,6 +192,19 @@
 			</key>
 			<one-to-many class="ResourcesComponents"/>
 		</set>
+		
+		<set name="archDescComponentIdentifiers"
+			 cascade="all"
+			 inverse="true"
+			 lazy="true"
+			 sort="natural"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="resourceComponentId" not-null="true"/>
+			</key>
+			<one-to-many class="ArchDescComponentIdentifiers"/>
+		</set>
 
 		<many-to-one name="resourceComponentParent"
 					 column="parentResourceComponentId"/>

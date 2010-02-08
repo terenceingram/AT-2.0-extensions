@@ -288,6 +288,19 @@
 			</key>
 			<one-to-many class="ResourcesComponents"/>
 		</set>
+		
+		<set name="archDescComponentIdentifiers"
+			 cascade="all"
+			 inverse="true"
+			 lazy="true"
+			 sort="natural"
+			 fetch="subselect"
+			 access="field">
+			<key>
+				<column name="resourceId" not-null="true"/>
+			</key>
+			<one-to-many class="org.archiviststoolkit.model.ArchDescComponentIdentifiers"/>
+		</set>
 
         <set name="archDescriptionDates"
               cascade="all-delete-orphan"
