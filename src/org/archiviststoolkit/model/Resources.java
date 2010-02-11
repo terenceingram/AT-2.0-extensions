@@ -291,6 +291,8 @@ public class Resources extends ResourcesCommon {
 	public void removeRelatedObject(DomainObject domainObject) throws ObjectNotRemovedException {
 		if (domainObject instanceof ResourcesComponents) {
 			removeResourcesComponents((ResourcesComponents) domainObject);
+		} else if (domainObject instanceof ArchDescComponentIdentifiers) {
+			archDescComponentIdentifiers.remove((ArchDescComponentIdentifiers) domainObject);
 		} else {
 			super.removeRelatedObject(domainObject);
 		}

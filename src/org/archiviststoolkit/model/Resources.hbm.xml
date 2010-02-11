@@ -290,17 +290,16 @@
 		</set>
 		
 		<set name="archDescComponentIdentifiers"
-			 cascade="all"
+			 cascade="all-delete-orphan"
 			 inverse="true"
 			 lazy="true"
-			 sort="natural"
-			 fetch="subselect"
 			 access="field">
 			<key>
-				<column name="resourceId" not-null="true"/>
+				<column name="resourceId"/>
 			</key>
-			<one-to-many class="org.archiviststoolkit.model.ArchDescComponentIdentifiers"/>
+			<one-to-many class="ArchDescComponentIdentifiers"/>
 		</set>
+		
 
         <set name="archDescriptionDates"
               cascade="all-delete-orphan"
