@@ -194,14 +194,12 @@
 		</set>
 		
 		<set name="archDescComponentIdentifiers"
-			 cascade="all"
+		 	 cascade="all-delete-orphan"
 			 inverse="true"
 			 lazy="true"
-			 sort="natural"
-			 fetch="subselect"
 			 access="field">
 			<key>
-				<column name="resourceComponentId" not-null="true"/>
+				<column name="resourceComponentId"/>
 			</key>
 			<one-to-many class="ArchDescComponentIdentifiers"/>
 		</set>

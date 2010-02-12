@@ -3332,6 +3332,27 @@ Snowman
         <Definition></Definition>
         <Examples></Examples>
     </RECORD>
-
-
+	
+	<!-- ArchDescComponentIdentifiers -->
+	<RECORD>
+        <ClassName>ArchDescComponentIdentifiers</ClassName>
+        <PropertyName>componentIdentifier</PropertyName>
+        <Element_Label>Identifier</Element_Label>
+        <Definition></Definition>
+        <Examples></Examples>
+    </RECORD>
+    <RECORD>
+        <ClassName>ArchDescComponentIdentifiers</ClassName>
+        <PropertyName>identifierType</PropertyName>
+        <Element_Label>Type</Element_Label>
+        <Definition></Definition>
+        <Examples></Examples>
+    </RECORD>
+    <RECORD>
+        <ClassName>ArchDescComponentIdentifiers</ClassName>
+        <PropertyName>identifierLabel</PropertyName>
+        <Element_Label>Label</Element_Label>
+        <Definition></Definition>
+        <Examples></Examples>
+    </RECORD>
 </RECORDS>

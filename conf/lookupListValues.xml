@@ -6008,6 +6008,92 @@
         <value>mailing</value>
 
     </list>
+    
+    <!-- ArchDescComponentIDentifiers List values -->
+    <list name="Identifier type" listType="1">		
+		<usage className="org.archiviststoolkit.model.ArchDescComponentIdentifiers" field="identifierType"/>
+		<value>subunit number</value>
+		<value>persistent identifier</value>
+		<value>altpersistent identifier</value>
+		<value>childrange</value>
+		<value>startchild</value>
+		<value>endchild</value>
+		<value>alt control number</value>
+	</list>		
+	
+	<list name="Identifier label" listType="1">		
+		<usage className="org.archiviststoolkit.model.ArchDescComponentIdentifiers" field="identifierLabel"/>
+		<value>Front Cover</value>
+		<value>Inside Front Cover</value>
+		<value>Page</value>
+		<value>Inside Back Cover</value>
+		<value>Back Cover</value>
+		<value>Additional Material</value>
+		<value>Additional Page</value>
+		<value>Additional Title Page</value>
+		<value>Bibliography</value>
+		<value>Biography</value>		
+		<value>Contents Page</value>
+		<value>Cover</value>
+		<value>Discography</value>
+		<value>End Papers</value>
+		<value>Fly Leaf</value>
+		<value>Illustration</value>
+		<value>Index</value>
+		<value>Introduction</value>
+		<value>Leaf Of Plate</value>
+		<value>List Title Page</value>
+		<value>Plate</value>
+		<value>Port</value>
+		<value>Preface</value>
+		<value>Table of Contents</value>
+		<value>Title Page</value>
+		<value>Variant Cover</value>
+		<value>Verso Plate</value>
+		<value>Part</value>
+		<value>Series</value>
+		<value>Folder</value>
+		<value>Box</value>
+		<value>Unnumbered Page</value>
+		<value>Tile</value>
+		<value>Subseries</value>
+		<value>Item</value>
+		<value>Items</value>
+		<value>Envelope</value>
+		<value>State</value>
+		<value>Enclosure</value>
+		<value>Folio</value>
+		<value>Number</value>
+		<value>Verso</value>
+		<value>Obverse</value>
+		<value>Session</value>
+		<value>Reverse</value>
+		<value>Book</value>
+		<value>Volume</value>
+		<value>Chapter</value>
+		<value>Map</value>
+		<value>Game board</value>
+		<value>Game pieces</value>
+		<value>Game instructions</value>
+		<value>Piece</value>
+		<value>Tour</value>
+		<value>Clipping</value>
+		<value>Program</value>
+		<value>Invitation</value>
+		<value>Spine</value>
+		<value>Recto</value>
+		<value>Head</value>
+		<value>Tail</value>
+		<value>Foredge</value>
+		<value>Board leaf</value>
+		<value>Text block</value>
+		<value>Fly leaf</value>
+		<value>Dedication</value>
+		<value>List of plates</value>
+		<value>Title page verso</value>
+		<value>Bag</value>
+	</list>		
+	
 
 
 

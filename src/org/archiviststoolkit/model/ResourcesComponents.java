@@ -199,5 +199,11 @@ public class ResourcesComponents extends ResourcesCommon implements Comparable {
 		this.archDescComponentIdentifiers = archDescComponentIdentifiers;
 	}
 	
+	public void addArchDescComponentIdentifier(ArchDescComponentIdentifiers newArchDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers.add(newArchDescComponentIdentifiers);
+	}
 	
+	public void removeArchDescComponentIdentifier(ArchDescComponentIdentifiers oldArchDescComponentIdentifiers) {
+		this.archDescComponentIdentifiers.remove(oldArchDescComponentIdentifiers);
+	}
 }

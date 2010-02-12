@@ -196,7 +196,6 @@ public class Resources extends ResourcesCommon {
 
     private ArrayList<ResourcesComponents> componentsToDelete = new ArrayList<ResourcesComponents>();
     
-	@ExcludeFromDefaultValues
     private Set<ArchDescComponentIdentifiers> archDescComponentIdentifiers = new HashSet<ArchDescComponentIdentifiers>();
 
     // Property accessors

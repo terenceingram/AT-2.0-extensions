@@ -3,6 +3,7 @@ package org.archiviststoolkit.model;
 import org.archiviststoolkit.mydomain.DomainObject;
 import org.archiviststoolkit.structure.ExcludeFromDefaultValues;
 import org.archiviststoolkit.structure.IncludeInApplicationConfiguration;
+import org.archiviststoolkit.structure.StringLengthValidationRequried;
 
 
 /**
@@ -30,6 +31,7 @@ public class ArchDescComponentIdentifiers extends DomainObject implements Compar
 	
 	@IncludeInApplicationConfiguration
 	@ExcludeFromDefaultValues
+	@StringLengthValidationRequried(255)
 	private String identifierLabel;
 	
 	private ResourcesComponents resourceComponent;
@@ -40,6 +42,10 @@ public class ArchDescComponentIdentifiers extends DomainObject implements Compar
 	
 	public ArchDescComponentIdentifiers(Resources resource) {
 		this.resource = resource;
+	}
+	
+	public ArchDescComponentIdentifiers(ResourcesComponents resourceComponents) {
+		this.resourceComponent = resourceComponents;
 	}
 	
 	
