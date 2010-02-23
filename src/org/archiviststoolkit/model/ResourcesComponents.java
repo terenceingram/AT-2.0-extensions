@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.archiviststoolkit.exceptions.ObjectNotRemovedException;
+import org.archiviststoolkit.mydomain.DomainObject;
 import org.archiviststoolkit.structure.IncludeInApplicationConfiguration;
 import org.archiviststoolkit.structure.ExcludeFromDefaultValues;
 import org.archiviststoolkit.structure.StringLengthValidationRequried;
@@ -66,6 +68,15 @@ public class ResourcesComponents extends ResourcesCommon implements Comparable {
 
 	public ResourcesComponents(Resources resource) {
 		this.resource = resource;
+	}
+	
+	@Override
+	public void removeRelatedObject(DomainObject domainObject) throws ObjectNotRemovedException {
+		if (domainObject instanceof ArchDescComponentIdentifiers) {
+			archDescComponentIdentifiers.remove((ArchDescComponentIdentifiers) domainObject);
+		} else {
+			super.removeRelatedObject(domainObject);
+		}
 	}
 
 	public String getLabelForTree() {
