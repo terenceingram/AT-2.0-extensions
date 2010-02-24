@@ -23,16 +23,16 @@ public class ArchDescComponentIdentifiers extends DomainObject implements Compar
 	
 	@IncludeInApplicationConfiguration
 	@ExcludeFromDefaultValues
-	private String componentIdentifier;
+	private String componentIdentifier = "";
 	
 	@IncludeInApplicationConfiguration
 	@ExcludeFromDefaultValues
-	private String identifierType;
+	private String identifierType = "";
 	
 	@IncludeInApplicationConfiguration
 	@ExcludeFromDefaultValues
 	@StringLengthValidationRequried(255)
-	private String identifierLabel;
+	private String identifierLabel = "";
 	
 	private ResourcesComponents resourceComponent;
 	private Resources resource;
